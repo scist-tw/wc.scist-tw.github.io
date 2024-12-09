@@ -1,8 +1,9 @@
 html {
     width: 100%;
     height: 100%;
-    background-color: #000;
+    background-color: black !important;
     color: white;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -11,8 +12,15 @@ body {
     height: 100%;
 }
 
+h1 {
+    font-size: 36px !important;
+}
+p {
+    font-size: 18px !important;
+}
+
 .cover {
-    background-image: url(./image/cover.png);
+    background-image: url(./image/logo.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -36,8 +44,16 @@ body {
     transform: translate(-50%, 0);
 }
 
+.sd_icon {
+    position: relative;
+    animation: arrow 1s ease-in-out infinite;
+    font-size: 30px;
+}
+
 #intro {
     padding: 10px;
+    width: 80%;
+    margin: auto;
 }
 
 .col1 {
@@ -60,21 +76,35 @@ body {
     flex-grow: 2;
 }
 
+/* .right1 {
+    
+} */
+
 .box1 {
     flex-grow: 1;
     background-color: #111717;
     border-radius: 10px;
-    border: 2px gray solid;
-    padding: 10px;
+    padding: 20px;
 }
 
 .box_long {
     flex-grow: 2;
     background-color: #111717;
     border-radius: 10px;
-    border: 2px gray solid;
-    padding: 10px;
+    padding: 20px;
 }
+
+.des {
+    margin-left: 2.3em;
+}
+
+.clock {
+    width: 100%;
+    height: 50%;
+    border: 2px solid white;
+}
+
+.digit
 
 @keyframes cover {
     0% {
@@ -84,5 +114,20 @@ body {
     100% {
         filter: blur(0px);
         background-size: 100%;
+    }
+}
+
+@keyframes arrow {
+    0% {
+        opacity: 0;
+        bottom: 10px;
+    }
+    50% {
+        opacity: 1;
+        bottom: 0px;
+    }
+    100% {
+        opacity: 0;
+        bottom: 0px;
     }
 }
