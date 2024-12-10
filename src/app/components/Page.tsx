@@ -1,6 +1,7 @@
 import React, { FC, useState, useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 import { FaFacebookF, FaInstagram, FaYoutube } from "react-icons/fa";
+import { Main } from "tsparticles-engine";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 import ActivitySchedule from "./Schedule";
@@ -88,7 +89,7 @@ const WinterTrainingWebsite: FC = () => {
     threshold: 0.1,
   });
 
-  const particlesInit = async (main: any): Promise<void> => {
+  const particlesInit = async (main: Main): Promise<void> => {
     await loadFull(main);
   };
 
