@@ -93,7 +93,6 @@ const WinterTrainingWebsite: FC = () => {
     await loadFull(main);
   };
 
-  /* eslint-disable react/prop-types */
   const particlesOptions: any = {
     background: {
       color: {
@@ -137,7 +136,6 @@ const WinterTrainingWebsite: FC = () => {
     },
     detectRetina: true,
   };
-  /* eslint-enable react/prop-types */
 
   return (
     <div className="bg-black text-indigo-400 font-mono overflow-x-hidden">
