@@ -93,6 +93,7 @@ const WinterTrainingWebsite: FC = () => {
     await loadFull(main);
   };
 
+  // eslint-disable-next-line react/prop-types
   const particlesOptions: any = {
     background: {
       color: {

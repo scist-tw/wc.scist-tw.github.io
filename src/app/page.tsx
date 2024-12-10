@@ -1,4 +1,5 @@
 "use client";
+
 import WinterTrainingWebsite from "./components/Page";
 
 export default function Main() {
