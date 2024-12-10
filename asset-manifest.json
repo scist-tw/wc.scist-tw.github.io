@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/wc-test.scist-tw.github.io/static/css/main.63ff1dfd.css",
+    "main.js": "/wc-test.scist-tw.github.io/static/js/main.f7713fb1.js",
+    "index.html": "/wc-test.scist-tw.github.io/index.html",
+    "main.63ff1dfd.css.map": "/wc-test.scist-tw.github.io/static/css/main.63ff1dfd.css.map",
+    "main.f7713fb1.js.map": "/wc-test.scist-tw.github.io/static/js/main.f7713fb1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.63ff1dfd.css",
+    "static/js/main.f7713fb1.js"
+  ]
+}
