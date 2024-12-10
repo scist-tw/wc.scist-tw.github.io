@@ -16,18 +16,32 @@ export default {
         blackMango: ["var(--font-black-mango)", "sans-serif"],
       },
       keyframes: {
-        fadeIn: {
-          from: { opacity: "0" },
-          to: { opacity: "1" },
+        glitch: {
+          "0%, 100%": { transform: "translate(0)" },
+          "2%, 64%": { transform: "translate(2px, 0) skew(0deg)" },
+          "4%, 60%": { transform: "translate(-2px, 0) skew(0deg)" },
+          "62%": { transform: "translate(0, 0) skew(5deg)" },
         },
         fadeInUp: {
-          from: { opacity: "0", transform: "translateY(-20px)" },
-          to: { opacity: "1", transform: "translateY(0)" },
+          "0%": { opacity: `${0}`, transform: "translateY(20px)" },
+          "100%": { opacity: `${1}`, transform: "translateY(0)" },
+        },
+        slideIn: {
+          "0%": { opacity: `${0}`, transform: "translateY(20px)" },
+          "100%": { opacity: `${1}`, transform: "translateY(0)" },
+        },
+        bounce: {
+          "0%, 20%, 50%, 80%, 100%": { transform: "translateY(0)" },
+          "40%": { transform: "translateY(-10px)" },
+          "60%": { transform: "translateY(-5px)" },
         },
       },
       animation: {
-        fadeIn: "fadeIn 1s ease-out forwards",
+        glitch: "glitch 1s linear infinite",
         fadeInUp: "fadeInUp 0.5s ease-out forwards",
+        fadeIn: "fadeIn 1s ease-out forwards",
+        slideIn: "slideIn 0.8s ease-out forwards",
+        bounce: "bounce 2s infinite",
       },
     },
   },
