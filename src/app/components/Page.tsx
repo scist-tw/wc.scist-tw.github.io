@@ -1,7 +1,6 @@
 "use client";
 
 import React, { FC, useState, useEffect } from "react";
-import ReactDOM from "react-dom/client";
 import "./style.css";
 
 const WinterTrainingWebsite: FC = () => {
