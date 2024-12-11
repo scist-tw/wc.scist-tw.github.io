@@ -267,7 +267,6 @@ const WinterTrainingWebsite: FC = () => {
                     <h2 className="text-3xl mb-6 text-indigo-300 border-b-2 border-indigo-500 pb-2">合作單位</h2>
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
                         {[
-                            '成功大學資訊工程學系',
                             '南大附中資訊研究社',
                             '屏東高中資訊研習社',
                             '新莊高中資訊研究社',
