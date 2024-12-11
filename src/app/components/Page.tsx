@@ -167,7 +167,7 @@ const WinterTrainingWebsite: FC = () => {
 
           <div className="mt-10">
             <a
-              href="https://forms.gle/Y4b6YGBAGCRw63Et8"
+              href="https://lihi.cc/aWaZk/web"
               target="_blank"
               rel="noopener noreferrer"
               className="px-8 py-3 bg-indigo-300 text-black rounded-full hover:bg-indigo-400 transition shadow-lg"
