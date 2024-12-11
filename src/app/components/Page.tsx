@@ -229,9 +229,9 @@ const WinterTrainingWebsite: FC = () => {
                     <h2 className="text-3xl mb-6 text-indigo-300 border-b-2 border-indigo-500 pb-2">課程講師</h2>
                     <div className="grid md:grid-cols-3 gap-8 text-indigo-100">
                         {[
-                            { name: '冰川/陳威達', photo: '/images/陳威達_photo.jpg', topic: '網頁前端設計', link: 'https://dada878.com/' },
+                            { name: '冰川/陳威達', photo: '/images/陳威達_photo.jpg', topic: '網頁前端開發', link: 'https://dada878.com/' },
                             { name: 'OsGa/黃宥睿', photo: '/images/黃宥睿_photo.jpg', topic: 'Discord bot', link: 'https://www.osga.lol/' },
-                            { name: '4Yu/黃士育', photo: '/images/黃士育_photo.jpg', topic: 'AI基礎+實作', link: 'https://4yu.dev/' },
+                            { name: '4Yu/黃士育', photo: '/images/黃士育_photo.jpg', topic: 'AI 入門', link: 'https://4yu.dev/' },
                         ].map((instructor, index) => (
                             <div
                                 key={index}
