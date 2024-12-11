@@ -23,38 +23,118 @@ interface ScheduleData {
 const ActivitySchedule: FC = () => {
   const [activeDay, setActiveDay] = useState<number>(0);
 
-  const scheduleData = [
+  const scheduleData: ScheduleData[] = [
     {
-      date: '01/24',
+      date: "2025/1/24 (五)",
       events: [
-        { time: '08:30-09:00', title: '01/24', icon: <Clock />, description: '01/24' },
-        { time: '09:00-10:30', title: '01/24', icon: <Rocket />, description: '01/24' },
-        { time: '10:30-12:00', title: '01/24', icon: <BookOpen />, description: '01/24' },
-        { time: '12:00-13:30', title: '01/24', icon: <Coffee />, description: '01/24' },
-        { time: '13:30-17:30', title: '01/24', icon: <Computer />, description: '01/24' },
-        { time: '18:00-20:00', title: '01/24', icon: <MapPin />, description: '01/24' }
-      ]
+        {
+          time: "08:30-09:00",
+          title: "不知道",
+          icon: <Clock />,
+          description: "不知道",
+        },
+        {
+          time: "09:00-10:30",
+          title: "不知道",
+          icon: <Rocket />,
+          description: "不知道",
+        },
+        {
+          time: "10:30-12:00",
+          title: "不知道",
+          icon: <BookOpen />,
+          description: "不知道",
+        },
+        {
+          time: "12:00-13:30",
+          title: "不知道",
+          icon: <Coffee />,
+          description: "不知道",
+        },
+        {
+          time: "13:30-17:30",
+          title: "不知道",
+          icon: <Computer />,
+          description: "不知道",
+        },
+        {
+          time: "18:00-20:00",
+          title: "不知道",
+          icon: <MapPin />,
+          description: "不知道",
+        },
+      ],
     },
     {
-      date: '01/25',
+      date: "2025/1/25 (六)",
       events: [
-        { time: '08:30-09:00', title: '01/25', icon: <Clock />, description: '01/25' },
-        { time: '09:00-12:00', title: '01/25', icon: <Computer />, description: '01/25' },
-        { time: '12:00-13:30', title: '01/25', icon: <Coffee />, description: '01/25' },
-        { time: '13:30-17:30', title: '01/25', icon: <Rocket />, description: '01/25' },
-        { time: '18:00-20:00', title: '01/25', icon: <MapPin />, description: '01/25' }
-      ]
+        {
+          time: "08:30-09:00",
+          title: "不知道",
+          icon: <Clock />,
+          description: "不知道",
+        },
+        {
+          time: "09:00-12:00",
+          title: "不知道",
+          icon: <Computer />,
+          description: "不知道",
+        },
+        {
+          time: "12:00-13:30",
+          title: "不知道",
+          icon: <Coffee />,
+          description: "不知道",
+        },
+        {
+          time: "13:30-17:30",
+          title: "不知道",
+          icon: <Rocket />,
+          description: "不知道",
+        },
+        {
+          time: "18:00-20:00",
+          title: "不知道",
+          icon: <MapPin />,
+          description: "不知道",
+        },
+      ],
     },
     {
-      date: '01/26',
+      date: "2025/1/26 (日)",
       events: [
-        { time: '08:30-09:00', title: '01/26', icon: <Clock />, description: '01/26' },
-        { time: '09:00-12:00', title: '01/26', icon: <Rocket />, description: '01/26' },
-        { time: '12:00-13:30', title: '01/26', icon: <Coffee />, description: '01/26' },
-        { time: '13:30-15:30', title: '01/26', icon: <MapPin />, description: '01/26' },
-        { time: '15:30-16:00', title: '01/26', icon: <BookOpen />, description: '01/26' }
-      ]
-    }
+        {
+          time: "08:30-09:00",
+          title: "不知道",
+          icon: <Clock />,
+          description: "不知道",
+        },
+        {
+          time: "09:00-12:00",
+          title: "不知道",
+          icon: <Rocket />,
+          description: "不知道",
+        },
+        {
+          time: "12:00-13:30",
+          title: "不知道",
+          icon: <Coffee />,
+          description: "不知道",
+        },
+        {
+          time: "13:30-15:30",
+          title: "不知道",
+          icon: <MapPin />,
+          description: "不知道",
+        },
+        {
+          time: "15:30-16:00",
+          title: "不知道",
+          icon: <BookOpen />,
+          description: "不知道",
+        },
+      ],
+    },
   ];
 
   return (
@@ -64,10 +144,11 @@ const ActivitySchedule: FC = () => {
           <button
             key={index}
             onClick={() => setActiveDay(index)}
-            className={`px-4 py-2 rounded-full transition-all duration-300 ${activeDay === index
+            className={`px-4 py-2 rounded-full transition-all duration-300 ${
+              activeDay === index
                 ? "bg-indigo-600 text-white"
                 : "bg-gray-800 text-indigo-300 hover:bg-indigo-500 hover:text-white"
-              }`}
+            }`}
           >
             {day.date}
           </button>
