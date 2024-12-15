@@ -147,7 +147,7 @@ const ActivitySchedule: FC = () => {
             onClick={() => setActiveDay(index)}
             className={`flex-shrink-0 px-3 py-2 min-w-[90px] rounded-full transition-all duration-300 text-sm 
                     ${activeDay === index
-                ? 'bg-indigo-600 text-black font-bold'
+                ? 'bg-indigo-600 text-lime-300 font-bold'
                 : 'bg-gray-800 text-indigo-300 hover:bg-indigo-500 hover:text-white'
               }`}
           >
