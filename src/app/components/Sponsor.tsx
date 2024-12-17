@@ -22,8 +22,11 @@ const Sponsor: React.FC = () => {
       </h2>
       <div className="flex flex-wrap justify-center gap-6">
         {[
-          { name: "DEVCORE", logo: "/images/devcore.png" },
-          { name: "SYSTEX 精誠資訊", logo: "/images/精誠科技.png" },
+          { name: "DEVCORE", logo: "/images/Devcore.png" },
+          { name: "YTP 少年圖靈計畫", logo: "/images/YTP.png" },
+          { name: "HIT 台灣駭客協會", logo: "/images/HIT.png" },
+          { name: "HackMD", logo: "/images/HackMD.png" },
+          { name: "CATCHER 可成教育基金會", logo: "/images/CATCHER.png" },
         ].map((sponsor, index) => (
           <div
             key={index}
