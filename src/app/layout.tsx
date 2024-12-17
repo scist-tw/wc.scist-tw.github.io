@@ -24,7 +24,6 @@ export const metadata: Metadata = {
   description: "2025 SCIST 寒訓官方網站",
   keywords: ["SCIST", "WinterCamp", "2025"],
   authors: [{ name: "yih-0118" }, { name: "fearnot221" }],
-  robots: "flag",
 };
 
 export default function RootLayout({
