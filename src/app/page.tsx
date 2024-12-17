@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 import Hero from "./components/Hero";
 import EventInfo from "./components/EventInfo";
 import Timetable from "./components/Timetable";
+import Lead from "./components/Lead";
 import Lecturer from "./components/Lecturer";
 import Clubs from "./components/Clubs";
 import Sponsor from "./components/Sponsor";
@@ -30,6 +31,7 @@ export default function Main() {
           <Hero />
           <EventInfo />
           <Timetable />
+          <Lead />
           <Lecturer />
           <Clubs />
           <Sponsor />

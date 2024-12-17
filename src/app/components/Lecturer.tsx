@@ -97,7 +97,7 @@ const Lecturer: FC = () => {
       .createHash("md5")
       .update(email.trim().toLowerCase())
       .digest("hex");
-    return `https://www.gravatar.com/avatar/${emailHash}?s=${size}&d=identicon`;
+    return `https://www.gravatar.com/avatar/${emailHash}?s=${size}`;
   }
 
   return (
