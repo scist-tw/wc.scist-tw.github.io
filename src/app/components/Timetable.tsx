@@ -1,6 +1,6 @@
 import React from "react";
 import { useInView } from "react-intersection-observer";
-import Schedule from "./Schedule";
+import ActivitySchedule from "./Schedule";
 
 const Timetable: React.FC = () => {
   const { ref: scheduleRef, inView: scheduleInView } = useInView({
@@ -19,7 +19,7 @@ const Timetable: React.FC = () => {
       <h2 className="text-3xl mb-6 text-indigo-300 border-b-2 border-indigo-500 pb-2">
         活動流程
       </h2>
-      <Schedule />
+      <ActivitySchedule />
     </section>
   );
 };
