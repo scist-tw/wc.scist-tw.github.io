@@ -30,9 +30,10 @@ const Hero: FC = () => (
         <FaYoutube size={20} />
       </a>
     </div>
-    <h1 className="text-5xl md:text-7xl font-bold neon-text mt-10 tracking-widest animate-glitch text-center">
+    <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold neon-text mt-10 tracking-widest animate-glitch text-center">
       2025 SCIST
     </h1>
+
     {/* <div className="relative"> */}
     {/* shadow */}
     {/* <h1
