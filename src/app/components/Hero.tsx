@@ -1,7 +1,8 @@
-import React from "react";
+import { FC } from "react";
 import { FaFacebookF, FaInstagram, FaYoutube } from "react-icons/fa";
+import Countdown from "./Countdown";
 
-const Hero: React.FC = () => (
+const Hero: FC = () => (
   <section className="min-h-screen flex flex-col justify-center items-center px-6 py-12 relative">
     <div className="absolute top-6 right-6 flex space-x-4 text-indigo-300">
       <a
@@ -29,13 +30,16 @@ const Hero: React.FC = () => (
         <FaYoutube size={20} />
       </a>
     </div>
+
     <h1 className="text-5xl md:text-7xl font-bold neon-text mt-10 tracking-widest animate-glitch text-center">
       2025 SCIST
     </h1>
     <h1 className="text-5xl md:text-7xl font-bold neon-text mt-10 tracking-widest animate-glitch text-center">
       資深玩家
     </h1>
-    {/* 報名按鈕 */}
+
+    <Countdown />
+
     <div className="mt-10">
       <a
         href="https://forms.gle/Y4b6YGBAGCRw63Et8"
@@ -45,6 +49,23 @@ const Hero: React.FC = () => (
       >
         立即報名
       </a>
+    </div>
+
+    <div className="mt-10 animate-bounce relative z-10">
+      <svg
+        className="w-8 h-8 text-indigo-300"
+        fill="none"
+        stroke="currentColor"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="2"
+          d="M19 9l-7 7-7-7"
+        ></path>
+      </svg>
     </div>
   </section>
 );
