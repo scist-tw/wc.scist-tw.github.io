@@ -3,9 +3,6 @@ import { useInView } from "react-intersection-observer";
 import { FaFacebookF, FaInstagram, FaYoutube } from "react-icons/fa";
 import Image from "next/image";
 import crypto from "crypto";
-// import { Main } from "tsparticles-engine";
-// import Particles from "react-tsparticles";
-// import { loadFull } from "tsparticles";
 import ActivitySchedule from "./Schedule";
 
 interface Countdown {
@@ -282,8 +279,8 @@ const WinterTrainingWebsite: FC = () => {
             {[
               {
                 name: "冰川/陳威達",
-                email: "dada878@example.com", // 待修改
-                topic: "網頁前端開發",
+                email: "xx0932399@gmail.com", // 待修改
+                topic: "網頁前端設計",
                 link: "https://dada878.com/",
               },
               {
@@ -294,8 +291,8 @@ const WinterTrainingWebsite: FC = () => {
               },
               {
                 name: "4Yu/黃士育",
-                email: "4yu@example.com", // 待修改
-                topic: "AI 入門",
+                email: "huangshiyu0318@gmail.com", // 待修改
+                topic: "AI 基礎 + 實作",
                 link: "https://4yu.dev/",
               },
             ].map((instructor, index) => (
