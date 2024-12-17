@@ -25,7 +25,7 @@ export default function Main() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
   return (
-    <div className="bg-black text-indigo-400 font-mono overflow-x-hidden">
+    <div className="bg-black text-indigo-400 font-mono overflow-hidden">
       <div className="relative z-10">
         <main>
           <Hero />

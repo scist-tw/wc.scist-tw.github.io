@@ -30,6 +30,13 @@ const InstructorCard = ({
 }: InstructorCardProps) => {
   const cardRef = useRef<HTMLDivElement | null>(null);
   const [hoverStyle, setHoverStyle] = useState<React.CSSProperties>({});
+  const handleMouseClick = () => {
+    setHoverStyle({
+      transform: "rotateX(0deg) rotateY(0deg) translateZ(0px)",
+      transition: "transform 0.5s ease-in",
+    });
+    openInstructorModal(instructor);
+  };
 
   const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
     if (cardRef.current) {
@@ -59,7 +66,7 @@ const InstructorCard = ({
       ref={cardRef}
       className="bg-gray-800 p-6 rounded text-center hover:scale-105 transform transition cursor-pointer [transform-style:preserve-3d] perspective-1000"
       style={hoverStyle}
-      onClick={() => openInstructorModal(instructor)}
+      onClick={handleMouseClick}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
     >
@@ -70,6 +77,7 @@ const InstructorCard = ({
           width={150}
           height={150}
           style={{ objectFit: "cover" }}
+          rel="preload"
           className="w-24 h-24 mx-auto bg-gray-700 rounded-full shadow-md transform transition-all duration-300 group-hover:scale-110 group-hover:rotate-6"
         />
       </div>
