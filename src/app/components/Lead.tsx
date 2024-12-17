@@ -50,6 +50,7 @@ const Lead: FC = () => {
             width={150}
             height={150}
             style={{ objectFit: "cover" }}
+            rel="preload"
             className="w-24 h-24 mx-auto bg-gray-700 rounded-full shadow-md transform transition-all duration-300 group-hover:scale-110 group-hover:rotate-6"
           />
         </div>
