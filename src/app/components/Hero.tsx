@@ -1,80 +1,64 @@
 import { FC } from "react";
-import { FaFacebookF, FaInstagram, FaYoutube } from "react-icons/fa";
+import { FaFacebookF, FaInstagram, FaYoutube, FaCode } from "react-icons/fa";
 import Countdown from "./Countdown";
+import Link from "next/link";
+
+const CustomLink = ({ href, children, title }: any) => {
+  return (
+    <div className="relative group">
+      <Link href={href} target="_blank" className="hover:text-blue-600">
+        {children}
+      </Link>
+      <span className="absolute top-full left-1/2 transform -translate-x-1/2 mt-1 bg-black text-white p-1 rounded-lg text-sm max-w-[200px] w-[120px] opacity-0 group-hover:opacity-100 group-hover:translate-y-2 transition-all pointer-events-none flex items-center justify-center">
+        {title}
+      </span>
+    </div>
+  );
+};
 
 const Hero: FC = () => (
   <section className="min-h-screen flex flex-col justify-center items-center px-6 py-12 relative">
     <div className="absolute top-6 right-6 flex space-x-4 text-indigo-300">
-      <a
+      <CustomLink
+        title="官網"
+        href="https://scist.org"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="hover:text-indigo-500 transition"
+      >
+        <FaCode size={20} />
+      </CustomLink>
+      <CustomLink
+        title="Facebook"
         href="https://www.facebook.com/scist.tw/?locale=zh_TW"
         target="_blank"
         rel="noopener noreferrer"
         className="hover:text-indigo-500 transition"
       >
         <FaFacebookF size={20} />
-      </a>
-      <a
+      </CustomLink>
+      <CustomLink
+        title="Instagram"
         href="https://www.instagram.com/scist.tw/"
         target="_blank"
         rel="noopener noreferrer"
         className="hover:text-indigo-500 transition"
       >
         <FaInstagram size={20} />
-      </a>
-      <a
+      </CustomLink>
+      <CustomLink
+        title="Youtube"
         href="https://www.youtube.com/c/OfficialSCIST"
         target="_blank"
         rel="noopener noreferrer"
         className="hover:text-indigo-500 transition"
       >
         <FaYoutube size={20} />
-      </a>
+      </CustomLink>
     </div>
     <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold neon-text mt-10 tracking-widest animate-glitch text-center">
       2025 SCIST
     </h1>
-
-    {/* <div className="relative"> */}
-    {/* shadow */}
-    {/* <h1
-        className="font-blackMango absolute text-9xl text-black"
-        style={{
-          transform: "translate(-3px, -7px)",
-          fontWeight: "900", // 設定文字粗細
-          WebkitTextStroke: "3px black", // 黑框效果，並讓黑色部分更粗
-        }} */}
-    {/* >
-        SC&lt;/&gt;ST
-      </h1> */}
-    {/* 第一層文字：teal-300 */}
-    {/* <h1
-        className="font-blackMango absolute text-9xl text-teal-300"
-        style={{
-          transform: "translate(0, -5px)",
-        }}
-      >
-        SC&lt;/&gt;ST
-      </h1> */}
-    {/* 第二層文字：fuchsia-500 */}
-    {/* <h1
-        className="font-blackMango absolute text-9xl text-fuchsia-500"
-        style={{
-          transform: "translate(0, 5px)",
-        }}
-      >
-        SC&lt;/&gt;ST
-      </h1>
-
-      <h1 className="font-blackMango absolute text-9xl text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-blue-600 animate-trail">
-        SC&lt;/&gt;ST
-      </h1> */}
-
-    {/* 第三層文字：white 
-      <h1 className="font-blackMango relative text-9xl text-white z-20">
-        SC&lt;/&gt;ST
-      </h1>
-    </div> */}
-
     <h1 className="text-5xl md:text-7xl font-bold neon-text mt-10 tracking-widest animate-glitch text-center">
       資深玩家
     </h1>
