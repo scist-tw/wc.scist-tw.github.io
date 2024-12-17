@@ -35,6 +35,10 @@ export default {
           "40%": { transform: "translateY(-10px)" },
           "60%": { transform: "translateY(-5px)" },
         },
+        trail: {
+          "0%": { opacity: "0.8", transform: "translateY(0)" },
+          "100%": { opacity: "0", transform: "translateY(80px)" },
+        },
       },
       animation: {
         glitch: "glitch 1s linear infinite",
@@ -42,6 +46,7 @@ export default {
         fadeIn: "fadeIn 1s ease-out forwards",
         slideIn: "slideIn 0.8s ease-out forwards",
         bounce: "bounce 2s infinite",
+        trail: "trail 1.5s steps(5, start) infinite",
       },
     },
   },

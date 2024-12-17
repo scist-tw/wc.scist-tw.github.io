@@ -10,15 +10,6 @@ const nextConfig: NextConfig = {
       },
     ],
   },
-  // async redirects() {
-  //   return [
-  //     {
-  //       source: "/signup",
-  //       destination: "https://lihi.cc/ySu3Z",
-  //       permanent: true,
-  //     },
-  //   ];
-  // },
 };
 
 export default nextConfig;

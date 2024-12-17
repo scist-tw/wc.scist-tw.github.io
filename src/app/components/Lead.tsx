@@ -49,6 +49,7 @@ const Lead: FC = () => {
             alt={instructor.name}
             width={150}
             height={150}
+            loading="lazy"
             style={{ objectFit: "cover" }}
             className="w-24 h-24 mx-auto bg-gray-700 rounded-full shadow-md transform transition-all duration-300 group-hover:scale-110 group-hover:rotate-6"
           />
