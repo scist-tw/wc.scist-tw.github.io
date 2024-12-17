@@ -10,6 +10,15 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  async redirects() {
+    return [
+      {
+        source: "/flag",
+        destination: "https://youtu.be/dQw4w9WgXcQ",
+        permanent: true,
+      },
+    ];
+  },
 };
 
 export default nextConfig;
