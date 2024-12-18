@@ -9,7 +9,8 @@ const EventInfo: React.FC = () => {
 
   return (
     <section
-      ref={infoRef}
+	  id='EventInfo'
+	  ref={infoRef}
       className={`max-w-5xl mx-auto bg-gray-900 bg-opacity-70 rounded-xl p-8 my-16 transition-opacity duration-1000 transform ${
         infoInView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
       }`}
