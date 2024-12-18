@@ -16,6 +16,10 @@ export default {
         blackMango: ["var(--font-black-mango)", "sans-serif"],
       },
       keyframes: {
+        smoothScroll: {
+          "0%": { transform: "translateY(0)" },
+          "100%": { transform: "translateY(var(--scroll-distance))" },
+        },
         glitch: {
           "0%, 100%": { transform: "translate(0)" },
           "2%, 64%": { transform: "translate(2px, 0) skew(0deg)" },
@@ -41,6 +45,7 @@ export default {
         },
       },
       animation: {
+        smoothScroll: "smoothScroll 1s ease-in-out",
         glitch: "glitch 1s linear infinite",
         fadeInUp: "fadeInUp 0.5s ease-out forwards",
         fadeIn: "fadeIn 1s ease-out forwards",

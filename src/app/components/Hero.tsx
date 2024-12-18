@@ -16,13 +16,6 @@ const CustomLink = ({ href, children, title }: any) => {
   );
 };
 
-const smoothScrollTo = (targetId: string) => {
-  const target = document.querySelector(targetId);
-  if (target) {
-    target.scrollIntoView({ behavior: "smooth" });
-  }
-};
-
 const Hero: FC = () => (
   <section className="min-h-screen flex flex-col justify-center items-center px-6 py-12 relative">
     <div className="absolute top-6 right-6 flex space-x-4 text-indigo-300">
@@ -82,8 +75,9 @@ const Hero: FC = () => (
     </div>
     <div className="mt-10 animate-bounce relative z-10">
       <div
-        className="cursor-pointer"
-        onClick={() => smoothScrollTo("#EventInfo")}
+        id="target"
+        className="cursor-pointer scroll-smooth duration-1000"
+        onClick={() => document.querySelector("#EventInfo")?.scrollIntoView()}
       >
         <svg
           className="w-8 h-8 text-indigo-300"
@@ -105,4 +99,3 @@ const Hero: FC = () => (
 );
 
 export default Hero;
-
