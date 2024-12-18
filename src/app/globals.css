@@ -24,6 +24,10 @@ body {
   font-family: Arial, Helvetica, sans-serif, var(--font-black-mango);
 }
 
+.custom-bg {
+  object-position: center 55% !important; /* 調整圖片位置，20% 表示垂直向下偏移 */
+}
+
 @keyframes glitch {
   2%,
   64% {

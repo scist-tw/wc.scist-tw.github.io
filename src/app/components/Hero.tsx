@@ -1,6 +1,7 @@
 import { FC } from "react";
 import { FaFacebookF, FaInstagram, FaYoutube, FaCode } from "react-icons/fa";
 import Countdown from "./Countdown";
+import Image from "next/image";
 import Link from "next/link";
 
 const CustomLink = ({ href, children, title }: any) => {
@@ -17,8 +18,17 @@ const CustomLink = ({ href, children, title }: any) => {
 };
 
 const Hero: FC = () => (
-  <section className="min-h-screen flex flex-col justify-center items-center px-6 py-12 relative">
-    <div className="absolute top-6 right-6 flex space-x-4 text-indigo-300">
+  <section className="min-h-screen flex flex-col items-center justify-end  px-6 py-12 relative mt-10">
+    <Image
+      src="/Hero.png"
+      alt="Hero Background"
+      layout="fill"
+      objectFit="cover"
+      quality={100}
+      priority
+      className="z-[-1] custom-bg"
+    />
+    <div className="absolute top-6 right-6 flex space-x-4 text-indigo-300 -mt-12">
       <CustomLink
         title="官網"
         href="https://scist.org"
@@ -56,12 +66,12 @@ const Hero: FC = () => (
         <FaYoutube size={20} />
       </CustomLink>
     </div>
-    <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold neon-text mt-10 tracking-widest animate-glitch text-center">
+    {/* <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold neon-text mt-10 tracking-widest animate-glitch text-center">
       2025 SCIST
     </h1>
     <h1 className="text-5xl md:text-7xl font-bold neon-text mt-10 tracking-widest animate-glitch text-center">
       資深玩家
-    </h1>
+    </h1> */}
     <Countdown />
     <div className="mt-10">
       <a
@@ -75,7 +85,6 @@ const Hero: FC = () => (
     </div>
     <div className="mt-10 animate-bounce relative z-10">
       <div
-        id="target"
         className="cursor-pointer scroll-smooth duration-1000"
         onClick={() => document.querySelector("#EventInfo")?.scrollIntoView()}
       >
