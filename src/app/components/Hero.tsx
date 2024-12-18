@@ -26,6 +26,7 @@ const Hero: FC = () => (
       objectFit="cover"
       quality={100}
       priority
+      rel="preload"
       className="z-[-1] custom-bg"
     />
     <div className="absolute top-6 right-6 flex space-x-4 text-indigo-300 -mt-12">
