@@ -26,18 +26,16 @@ export default function Main() {
   }, []);
   return (
     <div className="bg-black text-indigo-400 font-mono overflow-hidden">
-      <div className="relative z-10">
-        <main>
-          <Hero />
-          <EventInfo />
-          <Timetable />
-          <Lead />
-          <Lecturer />
-          <Clubs />
-          <Sponsor />
-          <Footer />
-        </main>
-      </div>
+      <main className="relative z-10">
+        <Hero />
+        <EventInfo />
+        <Timetable />
+        <Lead />
+        <Lecturer />
+        <Clubs />
+        <Sponsor />
+        <Footer />
+      </main>
     </div>
   );
 }

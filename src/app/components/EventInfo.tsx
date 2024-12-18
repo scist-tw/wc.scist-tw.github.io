@@ -28,7 +28,8 @@ const EventInfo: React.FC = () => {
               <strong>活動日期：</strong>2025/1/24 - 2025/1/26
             </li>
             <li>
-              <strong>活動地點：</strong>國立成功大學、國立臺南一中
+              <strong>活動地點：</strong>
+              國立成功大學、國立臺南一中、國立臺南二中
             </li>
             <li>
               <strong>主辦單位：</strong>SCIST 南臺灣學生資訊社群
