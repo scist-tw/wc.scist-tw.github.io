@@ -27,8 +27,7 @@ const Hero: FC = () => (
       quality={100}
       priority
       rel="preload"
-      className="z-[-1] object-center"
-      style={{ objectPosition: "center 55%" }}
+      className="z-[-1] object-[center_55%]"
     />
     <div className="absolute top-6 right-6 flex space-x-4 text-indigo-300 -mt-12">
       <CustomLink
