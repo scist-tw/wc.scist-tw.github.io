@@ -9,7 +9,7 @@ import Lecturer from "./components/Lecturer";
 import Clubs from "./components/Clubs";
 import Sponsor from "./components/Sponsor";
 import Footer from "./components/Footer";
-
+import Test from "./components/Test";
 export default function Main() {
   const [, setScrollProgress] = useState<number>(0);
 
@@ -27,8 +27,9 @@ export default function Main() {
   return (
     <div className="bg-black text-indigo-400 font-mono overflow-hidden">
       <main className="relative z-10">
-        <Hero />
-        <EventInfo />
+        {/* <Hero /> */}
+		<Test/>
+		<EventInfo />
         <Timetable />
         <Lead />
         <Lecturer />
