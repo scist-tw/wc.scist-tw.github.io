@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 
-import Hero from "./components/Hero";
+// import Hero from "./components/Hero";
 import EventInfo from "./components/EventInfo";
 import Timetable from "./components/Timetable";
 import Lead from "./components/Lead";
