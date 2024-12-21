@@ -20,9 +20,13 @@ const CustomLink = ({ href, children, title }: any) => {
 
 const Test: FC = () => (
   <section className="min-h-screen flex flex-col items-center justify-end  px-6 py-12 relative mt-10">
-	<div>
-		<p>SCIST</p>
-	  <p className="color-white glitch text-[70px] md:text-[120px] lg:text-[150px]">
+	<div className="color-white">
+	  <p className="glitch text-[50px] md:text-[80px]">
+		<span aria-hidden="true">SCIST 2025 寒訓</span>
+		SCIST 2025 寒訓
+		<span aria-hidden="true">SCIST2025 寒訓</span>
+	  </p>
+	  <p className="glitch text-[70px] md:text-[120px] lg:text-[150px]">
 		<span aria-hidden="true">資深玩家</span>
 		資深玩家
 		<span aria-hidden="true">資深玩家</span>
