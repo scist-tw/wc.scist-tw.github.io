@@ -1,7 +1,7 @@
 import { FC } from "react";
 import { FaFacebookF, FaInstagram, FaYoutube, FaCode } from "react-icons/fa";
 import Countdown from "./Countdown";
-import Image from "next/image";
+// import Image from "next/image";
 import Link from "next/link";
 import './style/glitch.css';
 
