@@ -59,14 +59,14 @@ const Sponsor: React.FC = () => {
             className="bg-gray-800 shadow-md p-6 rounded text-center w-80 hover:scale-105 transform transition"
           >
             <div className="mb-6">
-              <div className="w-64 h-32 mx-auto bg-gray-100 rounded flex items-center justify-center">
+              <div className=" mx-auto bg-gray-100 rounded flex items-center justify-center">
                 <Link href={sponsor.website} target="_blank">
                   <Image
                     src={sponsor.logo}
                     alt={sponsor.name}
                     width={300}
                     height={200}
-                    className="max-h-full max-w-full object-contain"
+                    className="w-64 h-32 object-contain"
                   />
                 </Link>
               </div>
