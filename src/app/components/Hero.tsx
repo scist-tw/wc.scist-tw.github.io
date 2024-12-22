@@ -17,7 +17,7 @@ const CustomLink = ({ href, children, title }: any) => {
 };
 
 const Test: FC = () => (
-  <section className="min-h-screen flex flex-col text-center items-center justify-center px-6 py-12 relative mt-10">
+  <section className="min-h-screen flex flex-col items-center justify-center px-6 py-12 relative mt-10">
     <div className="text-white">
       <p className="glitch text-[25px] md:text-[50px] t1">
         <span aria-hidden="true">SCIST 2025 winter camp</span>

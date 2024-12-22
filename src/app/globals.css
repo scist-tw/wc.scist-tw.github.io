@@ -147,9 +147,15 @@ body {
 
 .glitch span {
   position: absolute;
+  top: 0;
+  left: 0;
 }
 
-.t1 span {
+/* .glitch span {
+  position: absolute;
+} */
+
+/* .t1 span {
   top: 0;
   left: 0;
 }
@@ -157,28 +163,28 @@ body {
 .t2 span {
   top: 0;
   left: 0;
-}
+} */
 
 /* 螢幕寬度小於 768px 時 */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .t2 span {
     left: 25;
   }
-}
+} */
 
 /* 螢幕寬度介於 768px 到 1024px 時 */
-@media (min-width: 768px) and (max-width: 1024px) {
+/* @media (min-width: 768px) and (max-width: 1024px) {
   .t2 span {
     left: 90;
   }
-}
+} */
 
 /* 螢幕寬度大於 1024px 時 */
-@media (min-width: 1024px) {
+/* @media (min-width: 1024px) {
   .t2 span {
-    left: 30;
+    left: 50;
   }
-}
+} */
 
 .glitch span:first-child {
   animation: glitch 500ms infinite;
