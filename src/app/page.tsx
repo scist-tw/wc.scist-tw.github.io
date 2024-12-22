@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 
-// import Hero from "./components/Hero";
+import Hero from "./components/Hero";
 import EventInfo from "./components/EventInfo";
 import Timetable from "./components/Timetable";
 import Lead from "./components/Lead";
@@ -9,7 +9,7 @@ import Lecturer from "./components/Lecturer";
 import Clubs from "./components/Clubs";
 import Sponsor from "./components/Sponsor";
 import Footer from "./components/Footer";
-import Test from "./components/Test";
+
 export default function Main() {
   const [, setScrollProgress] = useState<number>(0);
 
@@ -27,9 +27,8 @@ export default function Main() {
   return (
     <div className="bg-black text-indigo-400 font-mono overflow-hidden">
       <main className="relative z-10">
-        {/* <Hero /> */}
-		<Test/>
-		<EventInfo />
+        <Hero />
+        <EventInfo />
         <Timetable />
         <Lead />
         <Lecturer />

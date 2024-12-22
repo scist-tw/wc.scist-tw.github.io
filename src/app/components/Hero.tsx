@@ -1,7 +1,6 @@
 import { FC } from "react";
 import { FaFacebookF, FaInstagram, FaYoutube, FaCode } from "react-icons/fa";
 import Countdown from "./Countdown";
-import Image from "next/image";
 import Link from "next/link";
 
 const CustomLink = ({ href, children, title }: any) => {
@@ -17,18 +16,20 @@ const CustomLink = ({ href, children, title }: any) => {
   );
 };
 
-const Hero: FC = () => (
-  <section className="min-h-screen flex flex-col items-center justify-end  px-6 py-12 relative mt-10">
-    <Image
-      src="/Hero.png"
-      alt="Hero Background"
-      layout="fill"
-      objectFit="cover"
-      quality={100}
-      priority
-      rel="preload"
-      className="z-[-1] object-[center_55%]"
-    />
+const Test: FC = () => (
+  <section className="min-h-screen flex flex-col text-center items-center justify-center px-6 py-12 relative mt-10">
+    <div className="text-white">
+      <p className="glitch text-[25px] md:text-[50px] t1">
+        <span aria-hidden="true">SCIST 2025 winter camp</span>
+        SCIST 2025 winter camp
+        <span aria-hidden="true">SCIST 2025 winter camp</span>
+      </p>
+      <p className="glitch text-[70px] md:text-[120px] lg:text-[150px] t2">
+        <span aria-hidden="true">資深玩家</span>
+        資深玩家
+        <span aria-hidden="true">資深玩家</span>
+      </p>
+    </div>
     <div className="absolute top-6 right-6 flex space-x-4 text-indigo-300 -mt-12">
       <CustomLink
         title="官網"
@@ -108,4 +109,4 @@ const Hero: FC = () => (
   </section>
 );
 
-export default Hero;
+export default Test;
