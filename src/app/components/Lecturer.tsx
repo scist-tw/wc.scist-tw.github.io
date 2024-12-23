@@ -1,5 +1,5 @@
 import React, { FC, useState } from "react";
-import InstructorCard from "./InstructorCard";
+import InstructorCard from "./Lect_card";
 import Image from "next/image";
 import crypto from "crypto";
 import { useInView } from "react-intersection-observer";
