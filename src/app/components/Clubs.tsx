@@ -17,9 +17,9 @@ const Clubs: React.FC = () => {
       }`}
     >
       <h2 className="text-3xl mb-6 text-indigo-300 border-b-2 border-indigo-500 pb-2">
-        合作單位
+        合作社團
       </h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      <div className="grid text-center grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {[
           "南大附中資訊研究社",
           "屏東高中資訊研習社",
@@ -41,7 +41,7 @@ const Clubs: React.FC = () => {
             key={index}
             className="bg-gray-800 p-4 rounded text-center hover:scale-105 transform transition"
           >
-            <div className="text-lg font-bold text-indigo-300">{partner}</div>
+            <div className="text-md  font-bold text-indigo-300">{partner}</div>
           </div>
         ))}
       </div>
