@@ -1,9 +1,16 @@
 import { FC } from "react";
 import Countdown from "./Countdown";
+import MatrixRain from "./MatrixRain"; // 引入 MatrixRain 組件
 
 const Test: FC = () => (
   <section className="min-h-screen flex flex-col items-center justify-center px-6 py-12 relative mt-10">
-    <div className="text-white">
+    {/* 背景動畫 */}
+    <div className="absolute inset-0 z-0">
+      <MatrixRain />
+    </div>
+
+    {/* 前景內容 */}
+    <div className="text-white relative z-10">
       <p className="glitch text-[25px] md:text-[50px] t1">
         <span aria-hidden="true">SCIST 2025 winter camp</span>
         SCIST 2025 winter camp
@@ -15,13 +22,9 @@ const Test: FC = () => (
         <span aria-hidden="true">資深玩家</span>
       </p>
     </div>
-    {/* <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold neon-text mt-10 tracking-widest animate-glitch text-center">
-      2025 SCIST
-    </h1>
-    <h1 className="text-5xl md:text-7xl font-bold neon-text mt-10 tracking-widest animate-glitch text-center">
-      資深玩家
-    </h1> */}
+
     <Countdown />
+
     <div className="mt-10">
       <a
         href="https://forms.gle/Y4b6YGBAGCRw63Et8"
@@ -32,6 +35,7 @@ const Test: FC = () => (
         立即報名
       </a>
     </div>
+
     <div className="mt-10 animate-bounce relative z-10">
       <div
         className="cursor-pointer scroll-smooth duration-1000"
