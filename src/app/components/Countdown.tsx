@@ -32,7 +32,7 @@ const Countdown: FC = () => {
   });
 
   useEffect(() => {
-    const targetDate: Date = new Date("2025-01-24T00:00:00");
+    const targetDate: Date = new Date("2024-12-31T00:00:00");
     const interval: NodeJS.Timeout = setInterval(() => {
       const now: Date = new Date();
       const difference: number = targetDate.getTime() - now.getTime();
@@ -59,7 +59,7 @@ const Countdown: FC = () => {
   return (
     <div className="mt-10 text-indigo-300 px-4 w-full">
       <h2 className="flex justify-center text-2xl sm:text-3xl animate-fadeInUp mb-5 text-center">
-        距離活動開始還有
+        距離報名截止還有
       </h2>
       <div className="flex justify-center flex-wrap space-x-2 sm:space-x-4 w-full max-w-md mx-auto">
         {Object.entries(countdown).map(([key, value]) => (
