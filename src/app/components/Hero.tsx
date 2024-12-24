@@ -1,5 +1,6 @@
 import { FC } from "react";
 import Countdown from "./Countdown";
+import Link from "next/link";
 import MatrixRain from "./MatrixRain"; // 引入 MatrixRain 組件
 
 const Test: FC = () => (
@@ -25,15 +26,15 @@ const Test: FC = () => (
 
     <Countdown />
 
-    <div className="mt-10">
-      <a
+    <div className="mt-10 relative">
+      <Link
         href="https://forms.gle/Y4b6YGBAGCRw63Et8"
         target="_blank"
         rel="noopener noreferrer"
-        className="px-8 py-3 bg-indigo-300 text-black rounded-full hover:bg-indigo-400 transition shadow-lg"
+        className="px-8 py-3 bg-indigo-300 text-black rounded-full hover:bg-indigo-400 transition shadow-lg z-50"
       >
         立即報名
-      </a>
+      </Link>
     </div>
 
     <div className="mt-10 animate-bounce relative z-10">
