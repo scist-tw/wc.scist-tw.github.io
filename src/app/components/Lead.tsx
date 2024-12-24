@@ -81,7 +81,7 @@ const Lecturer: FC = () => {
         }`}
       >
         <h2 className="text-3xl mb-6 text-indigo-300 border-b-2 border-indigo-500 pb-2">
-          課程講師
+          召群
         </h2>
         <div className="grid md:grid-cols-3 gap-8 text-indigo-100">
           {instructors.map((instructor, index) => (
