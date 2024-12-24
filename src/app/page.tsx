@@ -27,7 +27,7 @@ export default function Main() {
   return (
     <div className="bg-black text-indigo-400 font-mono overflow-hidden">
       <main className="relative z-10">
-        <Hero />
+		<Hero />
         <EventInfo />
         <Timetable />
         <Lead />
