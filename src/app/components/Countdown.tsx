@@ -32,7 +32,7 @@ const Countdown: FC = () => {
   });
 
   useEffect(() => {
-    const targetDate: Date = new Date("2024-12-31T00:00:00");
+    const targetDate: Date = new Date("2025-01-01T00:00:00");
     const interval: NodeJS.Timeout = setInterval(() => {
       const now: Date = new Date();
       const difference: number = targetDate.getTime() - now.getTime();
