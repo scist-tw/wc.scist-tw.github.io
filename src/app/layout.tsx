@@ -23,6 +23,7 @@ export const metadata: Metadata = {
   title: "2025 SCIST 資深玩家",
   description: "2025 SCIST 寒訓官方網站",
   keywords: ["SCIST", "WinterCamp", "2025"],
+  robots: "index, follow",
   authors: [{ name: "yih-0118" }, { name: "fearnot221" }],
 };
 
