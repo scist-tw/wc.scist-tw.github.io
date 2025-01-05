@@ -1,8 +1,0 @@
-{
-  "rewrites": [
-    {
-      "source": "/scoreboard",
-      "destination": "http://webhook.scist.org:30030"
-    }
-  ]
-}
