@@ -19,14 +19,14 @@ const nextConfig: NextConfig = {
       },
     ];
   },
-  async rewrites() {
-    return [
-      {
-        source: "/scoreboard",
-        destination: "http://webhook.scist.org:30030",
-      },
-    ];
-  },
+  // async rewrites() {
+  //   return [
+  //     {
+  //       source: "/scoreboard",
+  //       destination: "http://webhook.scist.org:30030",
+  //     },
+  //   ];
+  // },
 };
 
 export default nextConfig;
