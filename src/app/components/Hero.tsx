@@ -28,13 +28,13 @@ const Test: FC = () => (
 
     <div className="mt-10 relative">
       <Link
-        href="https://discord.gg/DGG2V5jx7m"
+        href="thank.mp4"
         target="_blank"
         rel="noopener noreferrer"
         className="flex gap-2 px-8 py-3 bg-[#5c6ae8] text-white rounded-full hover:bg-indigo-400 transition shadow-lg z-50"
       >
-		<img src="discord.svg" className="w-8 my-auto"/>
-		<p className="my-auto">加入 DISCORD</p>
+		{/* <img src="discord.svg" className="w-8 my-auto"/> */}
+		<p className="my-auto">報名已截止</p>
       </Link>
     </div>
 
